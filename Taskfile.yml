@@ -1,0 +1,9 @@
+version: '3'
+
+includes:
+  build: ./Taskfile_{{OS}}.yml
+
+tasks:
+  dev:
+    cmds:
+      - go run ./main.go
